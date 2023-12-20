@@ -36,6 +36,10 @@
         </div>
     </nav>
 
+    <div class="toggle-btn">
+        <img src="./image/menu.png" alt="menu">
+    </div>
+
     <header class="header container">
         <div class="circle"></div>
         <div class="row">
@@ -149,7 +153,7 @@
                         <li><img src="./image/social-icons/github.png" alt="github"></li>
                         <li><img src="./image/social-icons/linkedin.png" alt="linkedin"></li>
                     </ul>
-                </dib>
+                </div>
             </div>
         </div>
     </section>
@@ -160,6 +164,15 @@
             </p>
         </div>
     </footer>
+
+    <script>
+        let togglebtn = document.querySelector('.toggle-btn');
+        let navbar = document.querySelector('.navbar');
+
+        togglebtn.addEventListener('click', () => {
+        navbar.classList.toggle('mobile-nav');
+        });
+    </script>
 
 </body>
 </html>
